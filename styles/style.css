@@ -1,9 +1,34 @@
 * {
+    font-family: cursive;
     padding: 0;
     margin: 0;
 }
 
-section {
-    border: solid rgb(128, 128, 128) 2px;
-    margin: 0.5em;
+section.pag {
+    display: inline-block;
+    background-image: url(../images/v602-nunoon-05-rippednotes.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+}
+
+.fora {
+    position: relative;
+}
+
+.fora > h1 {
+    position: absolute;
+    left: 17%;
+    
+}
+
+.fora > p {
+    position: absolute;
+    font-size: 0.8em;
+    top: 43px;
+    left: 16%;
+    height: 340px;
+    width: 250px;
 }

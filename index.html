@@ -11,8 +11,10 @@
     <main>
         <div id="diario">
             <section class="pag">
-                <h1 contenteditable="true">Título</h1>
-                <p contenteditable="true">text</p>
+                <div class="fora">
+                    <h1 contenteditable="true">Título</h1>
+                    <p contenteditable="true">text</p>
+                </div>
             </section>
         </div>
         <input type="button" value="+" onclick="criarPagina()">
@@ -21,7 +23,7 @@
     <script>
         function criarPagina(){
             let diario = document.getElementById('diario')
-            diario.innerHTML += '<section class="pag"><h1 contenteditable="true">Título</h1><p contenteditable="true">text</p></section>'
+            diario.innerHTML += '<section class="pag"><div class="fora"><h1 contenteditable="true">Título</h1><p contenteditable="true">text</p></div></section>'
         }
     </script>
 </body>
