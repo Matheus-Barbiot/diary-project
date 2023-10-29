@@ -1,5 +1,5 @@
 * {
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -61,4 +61,21 @@ section.pag {
 
         box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.397);
         cursor: pointer;
+}
+
+#formatacoes {
+    position: fixed;
+    top: 1px;
+    right: 0px;
+
+}
+#formatacoes input {
+    width: 100px;
+    height: 50px;
+    border: 0;
+    border-radius: 25% 0% 0% 25%;
+
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.397);
+    box-sizing: border-box;
+    cursor: pointer;
 }
