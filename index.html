@@ -11,19 +11,18 @@
     <main>
         <div id="diario">
             <section class="pag">
-                <div class="fora">
-                    <h1 contenteditable="true">Título</h1>
-                    <p contenteditable="true">text</p>
-                </div>
+                <div class="fora" contenteditable="true"></div>
             </section>
         </div>
-        <input type="button" value="+" onclick="criarPagina()">
+        <div class="fora">
+            <input type="button" id="button" value="+" onclick="criarPagina()">
+        </div>
     </main>
 
     <script>
         function criarPagina(){
-            let diario = document.getElementById('diario')
-            diario.innerHTML += '<section class="pag"><div class="fora"><h1 contenteditable="true">Título</h1><p contenteditable="true">text</p></div></section>'
+            let diario = document.getElementById('diario');
+            diario.innerHTML += '<section class="pag"><div class="fora" contenteditable="true"></div></section>';
         }
     </script>
 </body>
