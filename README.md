@@ -1,39 +1,32 @@
 # diary-project
+
+<hr>
+<h1>My Dear Diary</h1>
+<p><strong>my dear Diary</strong> é uma aplicação web que simula um diário pessoal. Onde você pode guardar os seus mais diversos pensamentos, como foi seu dia, acontecimentos, lembretes e etc...</p>
+
+<h2>Recursos Principais:</h2>
+
+<ul>
+ <li><p><strong>Criação de Páginas:</strong> Adicione e organize suas anotações em páginas separadas para facilitar a navegação e categorização.</p></li>
+ <li><p><strong>Criação de títulos:</strong> Adcione títulos para uma boa visualização e organização do seu diário.</p></li>
+ <li><p><strong>Interface Intuitiva:</strong>Uma interface de usuário amigável torna a escrita e a navegação no diário uma experiência simples e agradável.</p></li>
+</ul>
+
+
+
  
-O Meu Diário Online é um projeto que permite aos usuários criar e manter um diário pessoal online de maneira prática e personalizada. Com este aplicativo web, você pode registrar suas memórias, pensamentos e sentimentos de forma segura e conveniente, acessando seu diário a partir de qualquer dispositivo com acesso à internet.
 
-Recursos Principais:
+<h2>Como Usar:</h2>
+<p>Para poder usar o site diretamente do seu navegador <a href='https://matheus-barbiot.github.io/diary-project/' target='_blank'>clique aqui</a></p>
 
-Criação de Páginas: Adicione e organize suas anotações em páginas separadas para facilitar a navegação e categorização.
+<h2>Contribuições:</h2>
+<p>Este projeto é de código aberto, e estamos abertos a contribuições da comunidade. Se você deseja melhorar ou adicionar recursos ao Meu Diário Online, sinta-se à vontade para contribuir.
+</p>
 
-Personalização: Dê um toque pessoal ao seu diário com a capacidade de adicionar títulos e imagens às páginas.
+<h2>Licença:</h2>
 
-Formatação de Texto: Aplique formatação básica ao texto, como negrito e itálico, para destacar informações importantes.
+<p>O Meu Diário Online é distribuído sob a licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.</p>
 
-Carregamento de Imagens: Faça o upload de suas próprias imagens para ilustrar suas memórias de forma visual e significativa.
-
-Interface Intuitiva: Uma interface de usuário amigável torna a escrita e a navegação no diário uma experiência simples e agradável.
-
-Como Usar:
-
-Clone o repositório do projeto em seu computador.
-
-Abra o arquivo index.html em seu navegador.
-
-Comece a escrever no seu diário, adicionando páginas, texto e imagens.
-
-Contribuições:
-
-Este projeto é de código aberto, e estamos abertos a contribuições da comunidade. Se você deseja melhorar ou adicionar recursos ao Meu Diário Online, sinta-se à vontade para contribuir.
-
-Licença:
-
-O Meu Diário Online é distribuído sob a licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
-
-Autor:
-
-Seu Nome
-
-Aproveite a experiência de manter seu diário pessoal online e reviva suas memórias de forma prática e criativa!
-
-Sinta-se à vontade para personalizar a descrição com informações adicionais ou específicas sobre o seu projeto. Lembre-se de adicionar um link para o seu perfil de GitHub na seção "Autor".
+<hr>
+<h1>Autor:</h1>
+<a href='github.com/matheus-barbiot'>Matheus barbiot</a>
