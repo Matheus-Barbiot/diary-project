@@ -1,9 +1,30 @@
+/* Reset de estilos */
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
+    font-family: 'Indie Flower', cursive;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Definição da fonte */
+@font-face {
+    font-family: 'Indie Flower';
+    src: url('../fonts/IndieFlower-Regular.ttf');
+}
+
+/* Estilos globais */
+body {
+    background-image: linear-gradient(to bottom, rgb(238, 238, 238), rgb(185, 185, 185));
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilos para as páginas do diário */
 section.pag {
     background-image: url(../images/v602-nunoon-05-rippednotes.jpg);
     background-repeat: repeat;
@@ -14,68 +35,72 @@ section.pag {
     margin: 20px auto;
     border-radius: 8px;
     box-shadow: 4px 4px 10px 5px rgba(10, 0, 53, 0.329);
+    padding: 0;
 }
 
+/* Estilos para as áreas de conteúdo */
 .fora {
-    font-size: 0.9em;
+    font-size: 1.3em;
     max-width: 400px;
     min-height: 600px;
     padding: 15px 0px;
     margin: 20px 0px;
-    margin-left: 60px;
-
+    margin-left: 65px;
+    outline: none;
 }
 
+/* Estilos para os botões de exclusão */
 .forabutton {
     position: relative;
 }
 
-.forabutton > input{
+.forabutton > input {
+    font-size: 1.5em;
     position: absolute;
     right: -15%;
-    top: -650px;
-
+    top: -25px;
     border: 0;
-    border-radius: 15%;
-    margin: auto;
+    border-radius: 50%;
     width: 50px;
     height: 50px;
-
     box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.397);
     cursor: pointer;
 }
 
-
-
+/* Estilos para o botão de adicionar página */
 .fora > input#button {
-        position: fixed;
-        bottom: 5%;
-        left: 80%;
-        right: 0;
-        
-        border: 0;
-        border-radius: 50%;
-        margin: auto;
-        width: 50px;
-        height: 50px;
-
-        box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.397);
-        cursor: pointer;
+    font-size: 1.5em;
+    position: fixed;
+    bottom: 5%;
+    left: 80%;
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.397);
+    cursor: pointer;
 }
 
+/* Estilos para a barra de formatações */
 #formatacoes {
     position: fixed;
     top: 1px;
     right: 0px;
-
 }
+
 #formatacoes input {
+    font-size: 1.5em;
     width: 100px;
     height: 50px;
     border: 0;
     border-radius: 25% 0% 0% 25%;
-
     box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.397);
     box-sizing: border-box;
     cursor: pointer;
+}
+
+/* Remover bordas de foco */
+.fora:focus,
+#formatacoes input:focus {
+    outline: none;
 }
