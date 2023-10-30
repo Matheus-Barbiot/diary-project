@@ -9,7 +9,7 @@ function criarPagina() {
         <div class="fora" contenteditable="true" id="${numPags}"></div>
         <div class="forabutton"><input type="button" id="${numPags}" value="x" onclick="deletarPagina('${numPags}')"></div>
     </section>`;
-
+    
     
 }
 
