@@ -1,4 +1,5 @@
 let numPags = 1;
+let vall = false
 let divEmFoco = null;
 
 function criarPagina() {
@@ -23,6 +24,8 @@ function criarTitulo() {
     }
 }
 
+let isEditable = false; // Inicializa como não editável
+
 function applyBold() {
     let selection = document.getSelection();
     let range = selection.getRangeAt(0);
@@ -30,10 +33,26 @@ function applyBold() {
     if (range) {
         let boldSpan = document.createElement('strong');
         boldSpan.textContent = range.toString();
-        boldSpan.setAttribute('contenteditable', 'false')
+        boldSpan.setAttribute('contenteditable', isEditable);
+
+        // Alterna o estado de edição ao clicar no elemento
+        boldSpan.addEventListener('click', function () {
+            isEditable = !isEditable;
+            boldSpan.setAttribute('contenteditable', isEditable);
+        });
+
+        boldSpan.addEventListener('mouseout', function () {
+            boldSpan.addEventListener('click', function () {
+                boldSpan.setAttribute('contenteditable', true);
+
+                if (isEditable === true) {
+                    isEditable = false
+                }
+            })
+        });
+
         range.deleteContents();
         range.insertNode(boldSpan);
-
     }
 }
     
@@ -45,8 +64,24 @@ function applyItalic() {
     if (range) {
         let ItalicSpan = document.createElement('em');
         ItalicSpan.textContent = range.toString();
-        ItalicSpan.setAttribute('contenteditable', 'false')
-        ItalicSpan.setAttribute('contenteditable', 'false')
+        ItalicSpan.addEventListener('mouseover', function () {
+            ItalicSpan.setAttribute('contenteditable', 'true')
+        })
+
+        ItalicSpan.addEventListener('click', function () {
+            isEditable = !isEditable;
+            ItalicSpan.setAttribute('contenteditable', isEditable);
+        });
+
+        ItalicSpan.addEventListener('mouseout', function () {
+            ItalicSpan.addEventListener('click', function () {
+                ItalicSpan.setAttribute('contenteditable', true);
+
+                if (isEditable === true) {
+                    isEditable = false
+                }
+            })
+        });
         range.deleteContents();
         range.insertNode(ItalicSpan);
 
