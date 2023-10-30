@@ -23,10 +23,43 @@ function criarTitulo() {
     }
 }
 
+function applyBold() {
+    let selection = document.getSelection();
+    let range = selection.getRangeAt(0);
+
+    if (range) {
+        let boldSpan = document.createElement('strong');
+        boldSpan.textContent = range.toString();
+        boldSpan.setAttribute('contenteditable', 'false')
+        range.deleteContents();
+        range.insertNode(boldSpan);
+
+    }
+}
+    
+
+function applyItalic() {
+    let selection = document.getSelection();
+    let range = selection.getRangeAt(0);
+
+    if (range) {
+        let ItalicSpan = document.createElement('em');
+        ItalicSpan.textContent = range.toString();
+        ItalicSpan.setAttribute('contenteditable', 'false')
+        ItalicSpan.setAttribute('contenteditable', 'false')
+        range.deleteContents();
+        range.insertNode(ItalicSpan);
+
+        selection.removeAllRanges();
+    }
+}
+
+
 document.addEventListener('click', function(event) {
     if (event.target.classList.contains('fora')) {
         divEmFoco = event.target;
     } else {
         divEmFoco = null;
     }
+
 });

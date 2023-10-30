@@ -55,28 +55,14 @@ section.pag {
 }
 
 .forabutton > input {
-    font-size: 1.5em;
+    font-size: 2em;
     position: absolute;
-    right: -15%;
-    top: -25px;
-    border: 0;
-    border-radius: 50%;
+    bottom: 570px;
+    left: 102%;
     width: 50px;
     height: 50px;
-    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.397);
-    cursor: pointer;
-}
-
-/* Estilos para o botão de adicionar página */
-.fora > input#button {
-    font-size: 1.5em;
-    position: fixed;
-    bottom: 5%;
-    left: 80%;
     border: 0;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
     box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.397);
     cursor: pointer;
 }
@@ -89,15 +75,33 @@ section.pag {
 }
 
 #formatacoes input {
-    font-size: 1.5em;
-    width: 100px;
+    font-size: 1.4em;
+    width: 120px;
     height: 50px;
+    margin-top: 10px;
     border: 0;
-    border-radius: 25% 0% 0% 25%;
+    border-radius: 30% 0% 0% 30%;
     box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.397);
     box-sizing: border-box;
     cursor: pointer;
 }
+
+.botao-formatacao {
+    font-size: 1.4em;
+    width: 120px;
+    height: 50px;
+    border: 0;
+    border-radius: 30% 0% 0% 30%;
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.397);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.botao-ativo {
+    width: 60px; /* Defina o tamanho desejado para o botão ativo */
+    opacity: 0.5; /* Defina a opacidade desejada para o botão ativo */
+}
+
 
 /* Remover bordas de foco */
 .fora:focus,
