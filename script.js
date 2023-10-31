@@ -10,7 +10,7 @@ function criarPagina() {
         <div class="fora" contenteditable="true" id="${numPags}"></div>
         <div class="forabutton"><input type="button" id="${numPags}" value="x" onclick="deletarPagina(${numPags})"></div>
     </section>`;
-    gerenciador.innerHTML += `<div class="pag${numPags}" contenteditable="true">pag${numPags} <input type="button" value="o" id="fixador" class="botaoGerenciador" class="pag${numPags}"></button><input type="button" value="x" class="botaoGerenciador" class="pag${numPags}" onclick="deletarPagina(${numPags})"></div>`
+    gerenciador.innerHTML += `<div class="pag${numPags}" contenteditable="true">pag${numPags} <input type="button" value="o" id="fixador" class="botaoGerenciador" class="pag${numPags}" onclick="scrolarAte(${numPags})"></button><input type="button" value="x" class="botaoGerenciador" class="pag${numPags}" onclick="deletarPagina(${numPags})"></div>`
     
 }
 
@@ -101,6 +101,12 @@ function applyItalic() {
     }
 }
 
+function scrolarAte(num) {
+    var element = document.getElementById(num);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 
 document.addEventListener('click', function(event) {
     if (event.target.classList.contains('fora')) {
