@@ -78,7 +78,7 @@ section.pag {
     box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.397);
 }
 
-#gerenciador > input{
+#gerenciador > button{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -88,8 +88,20 @@ section.pag {
     border: none;
     border-radius: 8px;
     margin: 10px 10px 10px 0px;
-    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.199);
+    box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.199);
 }
+
+.botaoGerenciador {
+    position: relative;
+    left: 35%;
+    height: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.199);
+    cursor: pointer;
+}
+
 /* Estilos para a barra de formatações */
 #formatacoes {
     position: fixed;

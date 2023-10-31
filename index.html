@@ -12,7 +12,7 @@
         <div id="diario">
             <section class="pag" id="1">
                 <div class="fora" contenteditable="true" id="1"></div>
-                <div class="forabutton"><input type="button" id="1" value="x" onclick="deletarPagina('1')"></div>
+                <div class="forabutton"><input type="button" id="1" value="x" onclick="deletarPagina(1)"></div>
             </section>
         </div>
         <div class="fora" id="formatacoes">
@@ -24,7 +24,7 @@
             <input type="button" id="button" value="Page" onclick="criarPagina()"> <br>
         </div>
         <div class="fora" id="gerenciador">
-            <input type="button" value="pag 1" id="1"> <br>
+            <button class="pag1" contenteditable="true">pag1 <input type="button" value="x" class="botaoGerenciador" class="pag1" onclick="deletarPagina(1)"></button> <br class="pag1">
         </div>
     </main>
 

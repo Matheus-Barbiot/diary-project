@@ -5,16 +5,28 @@ let divEmFoco = null;
 function criarPagina() {
     let diario = document.getElementById('diario');
     numPags++;
+    let gerenciador = document.getElementById('gerenciador')
     diario.innerHTML += `<section class="pag" id="${numPags}">
         <div class="fora" contenteditable="true" id="${numPags}"></div>
-        <div class="forabutton"><input type="button" id="${numPags}" value="x" onclick="deletarPagina('${numPags}')"></div>
+        <div class="forabutton"><input type="button" id="${numPags}" value="x" onclick="deletarPagina(${numPags})"></div>
     </section>`;
-    
+    gerenciador.innerHTML += `<button class="pag${numPags}" contenteditable="true">pag${numPags} <input type="button" class="botaoGerenciador" id="${numPags}" value="x" onclick="deletarPagina(${numPags})"></button> <br class="pag${numPags}">`
     
 }
 
 function deletarPagina(num) {
     let section = document.getElementById(num);
+    let inputGerenciador = document.getElementsByClassName(`pag${num}`);
+    
+    // Converta a coleção em um array para iterar sobre ela
+    let inputsArray = Array.from(inputGerenciador);
+    
+    // Remova os elementos
+    inputsArray.forEach(function (input) {
+        input.remove();
+    });
+
+    numPags--
     section.remove();
 }
 
