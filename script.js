@@ -104,7 +104,7 @@ function applyItalic() {
 function scrolarAte(num) {
     var element = document.getElementById(num);
     if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: 'smooth', block: 'center'});
     }
 }
 
