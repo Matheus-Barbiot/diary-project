@@ -16,12 +16,17 @@
             </section>
         </div>
         <div class="fora" id="formatacoes">
-            <input type="button" id="title" value="Title" onclick="criarTitulo()"> <br>
+            <input type="button" value="Title" id="Title1" class="button" onclick="mostrarTitulos()">
 
-            <input type="button" value="italic" id="Italico" onclick="applyItalic()"> <br>
-            <input type="button" value="bold" id="Negrito" onclick="applyBold()"> <br>
+            <div id="title">
+                <input type="button" value="h1" class="buttonTitle" onclick="criarTitulo('h1')">
+                <input type="button" value="h2" class="buttonTitle" onclick="criarTitulo('h2')">
+                <input type="button" value="h3" class="buttonTitle" onclick="criarTitulo('h3')">
+            </div>
 
-            <input type="button" id="button" value="Page" onclick="criarPagina()"> <br>
+            <input type="button" value="italic" class="button" onclick="applyItalic()"> 
+            <input type="button" value="bold" class="button" onclick="applyBold()">
+            <input type="button" value="Page" class="button" onclick="criarPagina()">
         </div>
         <div class="fora" id="gerenciador">
             <div class="pag1" contenteditable="true">pag1 

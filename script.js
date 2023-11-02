@@ -30,9 +30,9 @@ function deletarPagina(num) {
     section.remove();
 }
 
-function criarTitulo() {
+function criarTitulo(h) {
     if (divEmFoco) {
-        divEmFoco.innerHTML += '<h1>Title</h1>';
+        divEmFoco.innerHTML += `<${h}>Title</${h}>`;
     }
 }
 
@@ -107,6 +107,25 @@ function scrolarAte(num) {
         element.scrollIntoView({ behavior: 'smooth', block: 'center'});
     }
 }
+
+function substituir(event, func1, func2, element) {
+    let element1 = document.getElementById(element);
+    element1.removeEventListener(event, func1);
+    element1.addEventListener(event, func2);
+}
+
+function mostrarTitulos() {
+    let titles = document.getElementById('title');
+    titles.style.display = 'block';
+    substituir('click', mostrarTitulos, esconderTitulos, 'Title1');
+}
+
+function esconderTitulos() {
+    let titles = document.getElementById('title');
+    titles.style.display = 'none';
+    substituir('click', esconderTitulos, mostrarTitulos, 'Title1');
+}
+
 
 document.addEventListener('click', function(event) {
     if (event.target.classList.contains('fora')) {

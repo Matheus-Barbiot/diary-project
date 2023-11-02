@@ -38,6 +38,18 @@ section.pag {
     padding: 0;
 }
 
+section.pag h1 {
+    font-size: 2.5em;
+}
+
+section.pag h2 {
+    font-size: 1.8em;
+}
+
+section.pag h3 {
+    font-size: 1.5em;
+}
+
 /* Estilos para as áreas de conteúdo */
 .fora {
     font-size: 1.3em;
@@ -96,7 +108,7 @@ section.pag {
     box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.199);
 }
 
-.botaoGerenciador {
+.botaoGerenciador, .buttonTitle {
     position: absolute;
     right: 15px;
     top: 50%;
@@ -107,6 +119,22 @@ section.pag {
     border-radius: 3px;
     box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.199);
     cursor: pointer;
+}
+.buttonTitle {
+    position: relative;
+    display: inline;
+    top: 0;
+    right: 0;
+    transform: translate(0%);
+}
+
+#title {
+    display: none;
+    position: absolute;
+    right: 120px;
+    top: 35px;
+    height: 30px;
+    width: 120px;
 }
 
 #fixador {
@@ -120,7 +148,8 @@ section.pag {
     right: 0px;
 }
 
-#formatacoes input {
+#formatacoes .button {
+    display: block;
     font-size: 1.4em;
     width: 120px;
     height: 50px;
@@ -128,8 +157,13 @@ section.pag {
     border: 0;
     border-radius: 30% 0% 0% 30%;
     box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.397);
-    box-sizing: border-box;
     cursor: pointer;
+}
+
+.buttonTitle {
+    width: 30px;
+    height: 30px;
+
 }
 
 .botao-formatacao {
@@ -139,7 +173,6 @@ section.pag {
     border: 0;
     border-radius: 30% 0% 0% 30%;
     box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.397);
-    box-sizing: border-box;
     cursor: pointer;
 }
 
